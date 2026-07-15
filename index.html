@@ -21,6 +21,7 @@
             <a href="#proximas">Próximas Consultas</a>
             <a href="#historico">Histórico</a>
             <a href="#anexos">Anexos</a>
+            <a href="#midias">Mídias</a>
         </nav>
     </header>
     <main>
@@ -74,7 +75,114 @@
             </table>
         </section>
 
+        <section id="anexos" aria-labelledby="t-anexos">
+            <h2 id="t-anexos">Exames anexados</h2>
 
-    </main>
-</body>
+            <ul class="anexos">
+                <li>📄 Hemograma - 02/04/2026</li>
+                <li>📄 Eletrocardiograma - 14/03/2026</li>
+                <li>📄 Raio-x - 28/01/26</li>
+            </ul>
+
+            <button type="button">+ Anexar novo exame</button>
+        </section>
+
+        <section id="midias" aria-labelledby="t-midias">
+            <h2 id="t-midias">Galeria de Mídias</h2>
+            <h3>Imagens Informativas</h3>
+            <p>
+                <img
+                    src="imagens/logo.png"
+                    alt="Imagem que define a fachada da clínica"
+                    width="300"
+                    height="200"/>
+
+                <img
+                    src="https://plus.unsplash.com/premium_photo-1664392439710-c706f3e39024?q=80&w=446&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Imagem de remédios diversos"
+                    width="200"
+                    height="200"/>
+            </p>
+            
+                <h3>Instruções em vídeo</h3>
+                <h4>Como chegar à nossa unidade</h4>
+                <video controls width="300">
+                    <source src="videos/Characters_Peach.webm" type="video/webm"/>
+                    Seu navegador não suporta a reprodução de vídeo.
+                </video>
+
+                <h4>Orientações gerais de saúde</h4>
+                <video controls width="300">
+                    <source src="https://cdn.pixabay.com/video/2019/02/23/21617-319452308_tiny.mp4"
+                    type="video/mp4"/>
+
+                    Seu navegador não suporta a reprodução de vídeo.
+                </video>
+
+                <h4>Orientações vindas do Youtube sobre Saúde</h4>
+                <iframe
+                    width="300"
+                    height="225"
+                    src="https://www.youtube.com/embed/9q7WaQqtWK4?si=-jbythXXavxyCezz"
+                    title="Orientações do príncipe Drauzio Varella"
+                    allowfullscreen></iframe>
+
+                <h3>Instruções em Áudio</h3>
+
+                <h4>Mensagem de boas-vindas do médico</h4>
+                <p>
+                    <audio controls>
+                        <source src="audios/Crazy - Patrick Patrikios.mp3" type="audio/mpeg"/>
+
+                        Seu navegador não suporta reprodução de áudio.
+                    </audio>
+                </p>
+
+                <h4>Podcast sobre bem estar da internet</h4>
+                <p>
+                    <audio controls>
+                        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg"/>
+
+                        Seu navegador não suporta reprodução de áudio.
+                    </audio>
+                </p>
+                </section>
+
+                <section aria-labelledby="t-prefs">
+                    <h2 id="t-prefs">Receber lembretes por e-mail</h2>
+
+                    <form
+                        action="mailto:lembretes@bemestar.app"
+                        method="post"
+                        enctype="text/plain">
+                    
+                        <p>
+                            <label for="email">Seu e-mail</label> <br>
+
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                required
+                                placeholder="voce@exemplo.com" />
+                        </p>
+
+                        <p>
+                            <label for="quando">Quando avisar</label> <br>
+
+                            <select id="quando" name="quando">
+                                <option>24h antes</option>
+                                <option>2h antes</option>
+                                <option>No dia anterior</option>
+                            </select>
+                        </p>
+
+                        <button type="submit">Quero receber lembretes</button>
+                    </form>
+                </section>
+        </main>
+        <footer>
+            <p>Feito com amor para cuidar de você 😊</p>
+        </footer>
+    </body>
 </html>
