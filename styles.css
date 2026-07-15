@@ -1,0 +1,9 @@
+/* ============================================================
+   1) VARIÁVEIS CSS (Design Tokens)
+   Centralizar cores e tamanhos aqui evita repetição e facilita
+   trocar o tema inteiro depois.
+============================================================ */
+
+:root {
+  /* Define a cor azul escura e armazena na variável --azul-profundo */
+  --azul-profundo: #0b2545;}
