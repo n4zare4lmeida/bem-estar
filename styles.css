@@ -104,3 +104,209 @@ main {
 main > section {
   margin-top: 40px;
 }
+
+main h2 {
+font-size: 1.25rem;
+color: var(--azul-profundo);
+border-bottom: 2px solid var(--borda);
+padding-bottom: 8px;
+margin-bottom: 20px;
+position: relative;
+}
+
+main h2::after {
+content: "";
+position: absolute;
+bottom: -2px;
+left: 0;
+width: 60px;
+height: 2px;
+background: var(--azul-suave);
+}
+
+.consulta {
+background: var(--card);
+border: 1px solid var(--borda);
+border-radius: var(--raio);
+padding: 20px;
+margin-bottom: 16px;
+box-shadow: var(--sombra);
+transition: var(--transicao);
+}
+
+.consulta:hover {
+transform: translateY(-2px);
+box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+}
+
+.consulta time {
+display: inline-block;
+background: #eaf2ff;
+color: var(--azul-suave);
+font-weight: 600;
+font-size: 0.8rem;
+padding: 4px 12px;
+border-radius: 999px;
+margin-bottom: 12px;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+}
+
+.consulta p {
+font-size: 0.95rem;
+color: var(--texto-fraco);
+margin-top: 4px;
+}
+
+.consulta h3 {
+  /* Define o tamanho da fonte do título da consulta */
+  font-size: 1.15rem;
+  /* Aplica a cor azul escura no título */
+  color: var(--azul-profundo);
+}
+
+.consulta .lembrete {
+color: var(--verde-vida);
+font-weight: 600;
+margin-top: 12px;
+font-size: 0.9rem;
+display: flex;
+align-items: center;
+gap: 6px;
+}
+
+/* Cartão principal da seção */
+#nova-consulta {
+  /* Fundo branco para destacar o formulário */
+  background: var(--card);
+
+  /* Borda cinza suave */
+  border: 1px solid var(--borda);
+
+  /* Cantos arredondados */
+  border-radius: var(--raio);
+
+  /* Espaçamento interno */
+  padding: 24px;
+
+  /* Sombra padrão do projeto */
+  box-shadow: var(--sombra);
+}
+
+/* Organiza os campos do formulário */
+#nova-consulta form {
+  /* Utiliza Flexbox */
+  display: flex;
+
+  /* Campos ficam um abaixo do outro */
+  flex-direction: column;
+
+  /* Espaço entre os campos */
+  gap: 18px;
+}
+
+/* Texto dos labels */
+#nova-consulta label {
+  /* Deixa o texto em negrito */
+  font-weight: 600;
+
+  /* Cor padrão do texto */
+  color: var(--texto);
+}
+
+/* Todos os campos do formulário */
+#nova-consulta input,
+#nova-consulta textarea {
+  /* Ocupa toda a largura disponível */
+  width: 100%;
+
+  /* Espaçamento interno */
+  padding: 12px 14px;
+
+  /* Herda a fonte do restante da página */
+  font-family: inherit;
+
+  /* Tamanho da fonte */
+  font-size: 0.95rem;
+
+  /* Fundo branco */
+  background: var(--card);
+
+  /* Borda padrão */
+  border: 1px solid var(--borda);
+
+  /* Cantos arredondados */
+  border-radius: var(--raio);
+
+  /* Transição suave */
+  transition: var(--transicao);
+}
+
+/* Impede que o usuário redimensione horizontalmente o textarea */
+#nova-consulta textarea {
+  resize: vertical;
+}
+
+/* Quando o usuário clicar no campo */
+#nova-consulta input:focus,
+#nova-consulta textarea:focus {
+  /* Remove o contorno padrão */
+  outline: none;
+
+  /* Borda azul */
+  border-color: var(--azul-suave);
+
+  /* Brilho azul */
+  box-shadow: 0 0 0 4px rgba(58, 134, 255, 0.15);
+}
+
+/* Organiza os botões do formulário */
+#nova-consulta button {
+  /* Espaçamento interno */
+  padding: 12px 20px;
+
+  /* Espaço entre os botões */
+  margin-right: 10px;
+
+  /* Remove a borda padrão */
+  border: none;
+
+  /* Cantos arredondados */
+  border-radius: var(--raio);
+
+  /* Cor de fundo */
+  background: var(--azul-suave);
+
+  /* Cor do texto */
+  color: white;
+
+  /* Deixa o texto em negrito */
+  font-weight: 600;
+
+  /* Mostra a "mãozinha" ao passar o mouse */
+  cursor: pointer;
+
+  /* Anima as mudanças de cor e posição */
+  transition: var(--transicao);
+}
+
+/* Efeito ao passar o mouse */
+#nova-consulta button:hover {
+  /* Escurece um pouco o botão */
+  background: #2c6fd6;
+
+  /* Dá a impressão de que o botão sobe */
+  transform: translateY(-2px);
+}
+
+/* Efeito enquanto o botão está sendo clicado */
+#nova-consulta button:active {
+  transform: translateY(0);
+}
+
+
+
+
+
+
+ 
