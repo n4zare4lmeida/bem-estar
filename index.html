@@ -11,10 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-      /* CSS entra aqui na próxima aula */
-    </style>
   </head>
 
   <body>
@@ -37,24 +33,96 @@
         <h2>Próximas Consultas</h2>
 
         <article class="consulta">
-          <p><strong>Hospital São Lucas | Sala 415</strong></p>
-          <p>Dra Mariana Couto - Cardiologista</p>
           <time datetime="2026-07-08T07:30"
             >Quarta-feira, 8 de Julho, às 07h30</time
           >
+          <h3><strong>Hospital São Lucas | Sala 415</strong></h3>
+          <p>Dra Mariana Couto - Cardiologista</p>
           <p class="lembrete">Lembrar de levar exames de sangue</p>
         </article>
         <br />
         <article class="consulta">
-          <p><strong>Hospital Hapvida | Sala 300</strong></p>
-          <p>Dr Rodrigo - Psiquiatra</p>
           <time datetime="2026-07-10T09:30">
             Sexta-feira, 10 de Julho, às 09h30</time
           >
+          <h3><strong>Hospital Hapvida | Sala 300</strong></h3>
+          <p>Dr Rodrigo - Psiquiatra</p>
           <p class="lembrete">Lembrar de levar o documento de identificação</p>
         </article>
       </section>
-      <br />
+      <!-- NOVA CONSULTA -->
+      <section id="nova-consulta" aria-labelledby="t-nova-consulta">
+        <h2 id="t-nova-consulta">Adicionar Nova Consulta</h2>
+
+        <form action="#" method="post">
+          <p>
+            <label for="hospital">Hospital ou Clínica</label><br />
+            <input
+              type="text"
+              id="hospital"
+              name="hospital"
+              placeholder="Ex.: Hospital São Lucas"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="medico">Médico(a)</label><br />
+            <input
+              type="text"
+              id="medico"
+              name="medico"
+              placeholder="Ex.: Dra. Mariana Couto"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="especialidade">Especialidade</label><br />
+            <input
+              type="text"
+              id="especialidade"
+              name="especialidade"
+              placeholder="Ex.: Cardiologia"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="data">Data da consulta</label><br />
+            <input type="date" id="data" name="data" required />
+          </p>
+
+          <p>
+            <label for="hora">Horário</label><br />
+            <input type="time" id="hora" name="hora" required />
+          </p>
+
+          <p>
+            <label for="local">Sala ou Local</label><br />
+            <input
+              type="text"
+              id="local"
+              name="local"
+              placeholder="Ex.: Sala 415"
+            />
+          </p>
+
+          <p>
+            <label for="lembrete">Lembrete</label><br />
+            <textarea
+              id="lembrete"
+              name="lembrete"
+              rows="4"
+              maxlength="60"
+              placeholder="Ex.: Levar exames, documento de identidade..."
+            ></textarea>
+          </p>
+
+          <button type="submit">Salvar Consulta</button>
+          <button type="reset">Limpar</button>
+        </form>
+      </section>
       <!-- HISTÓRICO -->
       <section id="historico" aria-labelledby="t-historico">
         <h2 id="t-historico">Histórico Médico</h2>
